@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+   
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+</head>
+  <body>
+    <!-- navbar -->
+     <header class="header">
+      <a href="#" class="logo"><span>AN</span>ANYA</a>
+      <nav class="navbar">
+        <div id="nav-cover">
+          <ul id="navlink-flat">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#bio">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#portfolio">Portfolio</a></li> 
+           <li><a href="#contact">Contact me</a></li>
+         </ul>
+        </div>
+        
+        <div id="nav-cover2">
+          <ul id="navlink-vertical" >
+           <li><a href="#home">Home</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#bio">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#contact">Contact me</a></li>
+         </ul>
+        </div>
+
+        <div onclick="toggler()" class="hamburger">
+          <img  src="images/humbergermenu.png" alt="">
+        </div>
+    </nav>
+  </header>
+<!-- home section -->
+    <br /><br />
+    <div class="main">
+      <div id="home">
+        <div class="home-left">
+          <div class="home-text">
+            <h2>Hi, My name is <br><span class="highlight-1">Ananya Adhikary</span></h2>
+            <p class="home-left-intro"> I am a passionate Web Developer </p>
+            <p> I have profound knowledge in
+              front-end and I am looking forward to my Back-end Journey.
+            </p>
+          </div>
+          <br />
+          <div class="button">
+            <a href="mycv.pdf" id="cv-button-home" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="home-right">
+
+            <img
+            src="images/myimg.png"
+            alt="it's my pic" height="350px" 
+           >
+          </div>         
+        </div>  
+      
+      <!--   services   -->
+
+      <div id="services">
+        <h2>BEST SERVICES</h2>
+        <p >I'm <span class="highlight-1">Offering </span></p>
+        <div class="services-container">
+        <div class="services-1">
+          <h4>Responsive Web Design:</h4>
+          Creating websites that look great on all devices (desktops, tablets, and mobile phones) using HTML, CSS.
+        </div>
+        <div class="services-1">
+          <h4>Website Redesign:</h4>
+          Revamping existing websites to improve aesthetics, functionality, and user experience.  
+        
+        </div>
+        <div class="services-1">
+          <h4>Custom Website Development:</h4>
+          Building custom, static websites tailored to your needs.
+        </div>
+      </div>
+      </div>
+   
+    <!-- bio -->
+    
+      <div id="bio">
+        <h2>ABOUT ME</h2>
+        <p class="bio-top">Weaving imagination into the web, I create digital experiences that blend <span class="highlight-1">beauty and functionality</span></p>
+        <p>
+          I'm a passionate web developer specializing in front-end technologies
+          like HTML and CSS.My goal is to transform complex problems into
+          elegant solutions and bring your vision to life. Let's build something
+          great together!
+        </p>
+        <br />
+        <div class="details-container">
+        <table>
+          <tr>
+            <td><b>Name:</b><br />Ananya Adhikary</td>
+            <td><b>E-mail:</b><br />ananyaadhikary02@gmail.com</td>
+          </tr>
+          <tr>
+            <td><b>Birthday:</b><br />2nd jan, 2003</td>
+            <td><b>Age:</b><br />21</td>
+          </tr>
+          <tr>
+            <td><b>Phone number:</b><br />01902760603</td>
+            <td><b>Location:</b><br />Savar, Dhaka</td>
+          </tr>
+          
+        </table>
+      </div></div>
+  <br><br>
+  
+  <!--myskills-->
+
+  <div id="skills">
+    <p>SKILL</p>
+    <h2>My <span class="highlight-1">SKILLS</span</h2><br>
+      <div class="skill-container">
+      <div class="skill-box">
+      <p class="font_color"><img src="images/htmllogo.png" alt=""></a><br>HTML</p>
+      </div>
+      <div class="skill-box">
+        <p class="font_color"><img src="images/csslogo.png" alt=""></a><br>CSS</p>
+      </div>
+      <div class="skill-box">
+        <p class="font_color"><img src="images/javalogo.png" alt=""><br>JAVA</p>
+      </div>
+      <div class="skill-box">
+        <p class="font_color"><img src="images/C_Logo.png" alt=""><br>C</p>
+      </div>
+      <div class="skill-box">
+        <p class="font_color"><img src="images/c++logo.png" alt=""><br>C++</p>
+      </div>
+      <div class="skill-box">
+        <p class="font_color"><img src="images/javascript.png" alt=""><br>JAVASCRIPT</p>
+      </div>
+    </div>
+  </div>
+  <!--   experience  -->
+  <div id="experience">
+     <p >QUALIFICATION</p>
+    <h2>My <span class="highlight-1">ACHIEVEMENTS</span</h2>
+    <div class="edu-experi">
+      <div class="education">
+      <p>Education</p>
+         <div class="qualification">
+          <p style="color:lightgray">2023-2027</p>
+              <span class="highlight-1">Bachelor in  IT</span><br>
+              <p>I'm studing in BSC(Hons.) in Institute of Information Technology at Jahangirnagar University.I'm now in 2nd year 1st semester.</p> 
+         </div>
+         <div class="qualification">
+          <p style="color:lightgray">2019-2021</p>
+          <span class="highlight-1">Higher Secondary</span><sub style="color:rgb(151, 141, 141)">GPA-5.00</sub><br>
+          <p>I've finished my higher secondary, achieving a GPA-5 from Govt. Ashek Mahmud College.</p> 
+     </div>
+     <div class="qualification">
+      <p style="color:lightgray">2017-2019</p>
+      <span class="highlight-1">Secondary School Certificate </span><sub style="color:rgb(151, 141, 141)">GPA-4.89</sub><br>
+      <p>I've finished my secondary school certificate exam, achieving a GPA-4.89 from Kamal Khan Hat High School.</p> 
+    </div>
+    </div>
+  <div class="previous-experience">
+    <p>Experience</p>
+         <div class="qualification">
+          <p style="color:lightgray"> 2024</p>
+              <span class="highlight-1">Tourist Spot</span><br>
+              <p>It is an website,which is made by only using HTML.</p> 
+         </div>
+         <div class="qualification"></sub><br>
+          <p style="color:lightgray"> 2024</p>
+          <span class="highlight-1">Expense and income tracker</span>
+            <p>It is an application,it was made in 2024.</p>  
+     </div>
+     <div class="qualification">
+      <p style="color:lightgray"> 2023</p>
+      <span class="highlight-1">B-kash app</span><br>
+      <p>It was a project of making b-kash app using c language,which is made in 2023.</p> </div>
+  </div></div>
+  </div>
+<br>
+<!-- Portfolio  -->
+   <div id="portfolio">
+    <p>PORTFOLIO</p>
+    <h2> My <span class="highlight-1">PORTFOLIO</span></h2>
+    <div class="img-1">
+      <img src="images/iwt-assgnmt.png" alt="assignment-1">
+      <div class="overlay-text">TOURIST SPOT <br>( Website, using HTML)
+      </div>
+    <div class="img-1">
+      <img src="images/expense_income_tracker.png" alt="expense and income tracker" >
+      <div class="overlay-text">Expense & Income Tracker<br>(Application,using java)
+      </div>
+    </div>
+  </div>
+  <!-- Contact -->
+    <div id="contact">
+      <p style="color:lightgrey">CONTACT-FORM</p>
+      <h2>Get In <span class="highlight-1">Touch</span></h2>
+      <form>
+     <div class="form-style"> 
+        <div class="form-left">
+        <input type="text" id="name" name="name" placeholder="Name*" required><br>
+        <input type="email" id="email" name="email" placeholder="Email*" required><br>
+        <input type="text" id="address" name="address"placeholder="Address"><br>
+      </div>
+      <div class="form-right">
+         <textarea name="message" id="message" placeholder="Message"></textarea><br> 
+         <button type="submit">Send message</button>
+      </div>
+      </div>
+       </form> 
+      </div>
+    </div>
+    <!--   footer   -->
+   <footer class="bottom">
+   <div class="bottom-left">Copyright © ANANYA all rights reserved. Powered by ANANYA.<br><br>
+      <a href="https://www.linkedin.com/in/ananya-adhikary-552355293/" alt="linkedinprofile" target="_blank"><img src="images/linkedinlogo.png" alt="linkedinlogo"></a>
+      <a href="https://www.facebook.com/profile.php?id=100087849923381" alt="fb" target="_blank"><img src="images/fblogo.png" alt="fblogo"></a>
+      <a href="https://www.instagram.com/_ananya_adhikary23/?hl=en" alt="instragram" target="_blank"><img src="images/instra.png" alt="instralogo"></a>
+    </div> 
+    <div class="bottom-right">
+    <p>Privacy Policy</p>
+    <p>Terms and Conditions</p>       
+  </div>
+</footer>
+
+  </div>
+  <script src="script.js" ></script>
+    
+  </body>
+</html>
