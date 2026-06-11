@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <rect width="80" height="80" rx="14" fill="#215732"/>
+  <text x="40" y="36" font-family="Arial" font-size="12" font-weight="bold" fill="#68A063" text-anchor="middle">Node</text>
+  <text x="40" y="54" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">.js</text>
+</svg>

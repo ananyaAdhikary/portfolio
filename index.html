@@ -1,247 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-   
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ananya Adhikary — Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <!-- navbar -->
-     <header class="header">
-      <a href="#" class="logo"><span>AN</span>ANYA</a>
-      <nav class="navbar">
-        <div id="nav-cover">
-          <ul id="navlink-flat">
-           <li><a href="#home">Home</a></li>
-           <li><a href="#services">Services</a></li>
-           <li><a href="#bio">About</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#experience">Experience</a></li>
-           <li><a href="#portfolio">Portfolio</a></li> 
-           <li><a href="#contact">Contact me</a></li>
-         </ul>
-        </div>
-        
-        <div id="nav-cover2">
-          <ul id="navlink-vertical" >
-           <li><a href="#home">Home</a></li>
-           <li><a href="#services">Services</a></li>
-           <li><a href="#bio">About</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#experience">Experience</a></li>
-           <li><a href="#portfolio">Portfolio</a></li>
-           <li><a href="#contact">Contact me</a></li>
-         </ul>
-        </div>
+<body>
 
-        <div onclick="toggler()" class="hamburger">
-          <img  src="humbergermenu.png" alt="">
+<!-- ── NAVBAR ── -->
+<header class="header">
+  <a href="#" class="logo"><span>AN</span>ANYA</a>
+  <nav class="navbar">
+    <div id="nav-cover">
+      <ul id="navlink-flat">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#bio">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Achievements</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+    <div id="nav-cover2">
+      <ul id="navlink-vertical">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#bio">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Achievements</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div onclick="toggler()" class="hamburger">
+      <div class="ham-bar"></div>
+      <div class="ham-bar"></div>
+      <div class="ham-bar"></div>
+    </div>
+  </nav>
+</header>
+
+<div class="main">
+
+<!-- ── HOME ── -->
+<section id="home">
+  <div class="home-left">
+    <p class="home-greeting">Hello, I'm</p>
+    <h1 class="home-name"><em>Ananya</em>Adhikary</h1>
+    <p class="home-role">Passionate <span class="highlight-1 typing-text" id="typing-role"></span><span class="typing-cursor">|</span></p>
+    <p class="home-desc">Front-end specialist with a love for clean design, currently expanding into back-end development.</p>
+    <div class="home-actions">
+      <a href="Resume of Ananya Adhikary.pdf" class="btn-primary" download>Download RESUME</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+  <div class="home-right">
+    <div class="img-ring">
+      <img src="myimg2.jpg" alt="Ananya Adhikary"/>
+    </div>
+  </div>
+  <div class="home-scroll-hint">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services" class="reveal">
+  <p class="sec-label">What I Do</p>
+  <h2 class="sec-title">My <span class="highlight-1">Services</span></h2>
+  <div class="services-container">
+    <div class="services-1 reveal">
+      <div class="svc-icon">🎨</div>
+      <h4>Responsive Web Design</h4>
+      <p>Creating websites that look and feel great on every device — desktop, tablet, and mobile.</p>
+    </div>
+    <div class="services-1 reveal">
+      <div class="svc-icon">🔄</div>
+      <h4>Website Redesign</h4>
+      <p>Revamping existing websites to improve aesthetics, functionality, and user experience.</p>
+    </div>
+    <div class="services-1 reveal">
+      <div class="svc-icon">⚙️</div>
+      <h4>Custom Development</h4>
+      <p>Building custom, static websites carefully tailored to your specific needs and goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="bio" class="reveal">
+  <p class="sec-label">Who I Am</p>
+  <h2 class="sec-title">About <span class="highlight-1">Me</span></h2>
+  <p class="bio-top">Weaving imagination into the web — I create digital experiences that blend <span class="highlight-1">beauty and functionality.</span></p>
+  <p class="bio-desc">I'm a passionate web developer specialising in front-end technologies like HTML and CSS. My goal is to transform complex problems into elegant solutions and bring your vision to life.</p>
+
+  <div class="details-container reveal">
+    <div class="detail-item">
+      <span class="detail-label">Name</span>
+      <span class="detail-value">Ananya Adhikary</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Email</span>
+      <span class="detail-value">adhikaryananya01@gmail.com</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Birthday</span>
+      <span class="detail-value">2nd January, 2003</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Age</span>
+      <span class="detail-value">23</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Phone</span>
+      <span class="detail-value">01902760603</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Location</span>
+      <span class="detail-value">Savar, Dhaka</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="reveal">
+  <p class="sec-label">What I Know</p>
+  <h2 class="sec-title">My <span class="highlight-1">Skills</span></h2>
+  <p class="skills-hint">&#128071; Click a category to explore</p>
+
+  <div class="cat-tabs">
+    <button class="cat-btn active" id="catbtn-web" onclick="showSkill('web',this)">
+      <span class="cat-btn-icon">&#127760;</span>
+      <span class="cat-btn-label">Web Dev</span>
+      <span class="cat-btn-count">8 skills</span>
+      <div class="active-dot"></div>
+    </button>
+    <button class="cat-btn" id="catbtn-prog" onclick="showSkill('prog',this)">
+      <span class="cat-btn-icon">&#128187;</span>
+      <span class="cat-btn-label">Programming</span>
+      <span class="cat-btn-count">5 skills</span>
+      <div class="active-dot"></div>
+    </button>
+    <button class="cat-btn" id="catbtn-db" onclick="showSkill('db',this)">
+      <span class="cat-btn-icon">&#128452;</span>
+      <span class="cat-btn-label">Database</span>
+      <span class="cat-btn-count">5 skills</span>
+      <div class="active-dot"></div>
+    </button>
+    <button class="cat-btn" id="catbtn-tech" onclick="showSkill('tech',this)">
+      <span class="cat-btn-icon">&#128295;</span>
+      <span class="cat-btn-label">Technical</span>
+      <span class="cat-btn-count">7 topics</span>
+      <div class="active-dot"></div>
+    </button>
+    <button class="cat-btn" id="catbtn-soft" onclick="showSkill('soft',this)">
+      <span class="cat-btn-icon">&#129309;</span>
+      <span class="cat-btn-label">Soft Skills</span>
+      <span class="cat-btn-count">6 skills</span>
+      <div class="active-dot"></div>
+    </button>
+    <button class="cat-btn" id="catbtn-lang" onclick="showSkill('lang',this)">
+      <span class="cat-btn-icon">&#128483;</span>
+      <span class="cat-btn-label">Languages</span>
+      <span class="cat-btn-count">3 langs</span>
+      <div class="active-dot"></div>
+    </button>
+  </div>
+
+  <!-- Web Dev -->
+  <div class="skills-panel active" id="skillpanel-web">
+    <p class="panel-title">&#127760; Web Development</p>
+    <div class="skills-grid">
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#127760;</span><span class="tile-pct pct-purple">90%</span></div><div class="tile-name">HTML</div><div class="tile-level">Expert</div><div class="bar-track"><div class="bar-fill" style="width:90%;background:#a89ad4"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#127912;</span><span class="tile-pct pct-purple">85%</span></div><div class="tile-name">CSS</div><div class="tile-level">Expert</div><div class="bar-track"><div class="bar-fill" style="width:85%;background:#a89ad4"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#9889;</span><span class="tile-pct pct-gold">70%</span></div><div class="tile-name">JavaScript</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128024;</span><span class="tile-pct pct-gold">65%</span></div><div class="tile-name">PHP</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#9883;</span><span class="tile-pct pct-green">50%</span></div><div class="tile-name">React</div><div class="tile-level">Learning</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:#7ab87a"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128994;</span><span class="tile-pct pct-green">45%</span></div><div class="tile-name">Node.js</div><div class="tile-level">Learning</div><div class="bar-track"><div class="bar-fill" style="width:45%;background:#7ab87a"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128153;</span><span class="tile-pct pct-gold">70%</span></div><div class="tile-name">Bootstrap</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#127754;</span><span class="tile-pct pct-green">50%</span></div><div class="tile-name">Tailwind</div><div class="tile-level">Learning</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:#7ab87a"></div></div></div>
+    </div>
+  </div>
+
+  <!-- Programming -->
+  <div class="skills-panel" id="skillpanel-prog">
+    <p class="panel-title">&#128187; Programming Languages</p>
+    <div class="skills-grid">
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#9749;</span><span class="tile-pct pct-gold">70%</span></div><div class="tile-name">Java</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128013;</span><span class="tile-pct pct-green">70%</span></div><div class="tile-name">Python</div><div class="tile-level">Beginner</div><div class="bar-track"><div class="bar-fill" style="width:40%;background:#7ab87a"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#9881;</span><span class="tile-pct pct-gold">90%</span></div><div class="tile-name">C</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#9881;</span><span class="tile-pct pct-gold">80%</span></div><div class="tile-name">C++</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:#c8a96e"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128297;</span><span class="tile-pct pct-purple">75%</span></div><div class="tile-name">Assembly</div><div class="tile-level">Beginner</div><div class="bar-track"><div class="bar-fill" style="width:45%;background:#a89ad4"></div></div></div>
+    </div>
+  </div>
+
+  <!-- Database -->
+  <div class="skills-panel" id="skillpanel-db">
+    <p class="panel-title">&#128452; Database &amp; Systems</p>
+    <div class="skills-grid">
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128452;</span><span class="tile-pct pct-blue">68%</span></div><div class="tile-name">MySQL</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:68%;background:#6e8fa8"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128202;</span><span class="tile-pct pct-blue">65%</span></div><div class="tile-name">SQL</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:#6e8fa8"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128187;</span><span class="tile-pct pct-blue">70%</span></div><div class="tile-name">Linux</div><div class="tile-level">Learning</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:#6e8fa8"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#127807;</span><span class="tile-pct pct-blue">65%</span></div><div class="tile-name">Git</div><div class="tile-level">Intermediate</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:#6e8fa8"></div></div></div>
+      <div class="skill-tile"><div class="tile-top"><span class="tile-icon">&#128230;</span><span class="tile-pct pct-blue">60%</span></div><div class="tile-name">VirtualBox</div><div class="tile-level">Learning</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:#6e8fa8"></div></div></div>
+    </div>
+  </div>
+
+  <!-- Technical -->
+  <div class="skills-panel" id="skillpanel-tech">
+    <p class="panel-title">&#128295; Technical Concepts</p>
+    <div class="concept-grid">
+      <div class="concept-tile"><div class="concept-dot" style="background:#a89ad4"></div><span class="concept-text">Object-Oriented Programming</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#a89ad4"></div><span class="concept-text">Software Engineering</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#c8a96e"></div><span class="concept-text">MVC Architecture</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#c8a96e"></div><span class="concept-text">Data Structures</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#7ab87a"></div><span class="concept-text">Algorithms</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#7ab87a"></div><span class="concept-text">Responsive Design</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Figma Design</span></div>
+    </div>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="skills-panel" id="skillpanel-soft">
+    <p class="panel-title">&#129309; Soft Skills</p>
+    <div class="concept-grid">
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Teamwork</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Problem Solving</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Communication</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Time Management</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Adaptability</span></div>
+      <div class="concept-tile"><div class="concept-dot" style="background:#d4856e"></div><span class="concept-text">Critical Thinking</span></div>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="skills-panel" id="skillpanel-lang">
+    <p class="panel-title">&#128483; Languages</p>
+    <div class="lang-grid">
+      <div class="lang-row">
+        <div class="lang-top"><span class="lang-name">Bengali</span><span class="lang-badge" style="background:rgba(168,154,212,0.15);color:#6a5acd">Native</span></div>
+        <div class="lang-dots"><div class="ldot" style="background:#a89ad4"></div><div class="ldot" style="background:#a89ad4"></div><div class="ldot" style="background:#a89ad4"></div><div class="ldot" style="background:#a89ad4"></div><div class="ldot" style="background:#a89ad4"></div></div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-top"><span class="lang-name">English</span><span class="lang-badge" style="background:rgba(200,169,110,0.15);color:#9a7030">Fluent</span></div>
+        <div class="lang-dots"><div class="ldot" style="background:#c8a96e"></div><div class="ldot" style="background:#c8a96e"></div><div class="ldot" style="background:#c8a96e"></div><div class="ldot" style="background:#c8a96e"></div><div class="ldot" style="background:rgba(20,16,58,0.1)"></div></div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-top"><span class="lang-name">Hindi</span><span class="lang-badge" style="background:rgba(122,184,122,0.15);color:#2e6e2e">Basic</span></div>
+        <div class="lang-dots"><div class="ldot" style="background:#7ab87a"></div><div class="ldot" style="background:#7ab87a"></div><div class="ldot" style="background:rgba(20,16,58,0.1)"></div><div class="ldot" style="background:rgba(20,16,58,0.1)"></div><div class="ldot" style="background:rgba(20,16,58,0.1)"></div></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── ACHIEVEMENTS ── -->
+<section id="experience">
+  <p class="sec-label">My Journey</p>
+  <h2 class="sec-title">Achievements &amp; <span class="highlight-1">Projects</span></h2>
+
+  <div class="achieve-tabs">
+    <button class="achieve-tab-btn active" id="btn-education" style="color:rgb(249, 245, 245)">🎓 Education</button>
+    <button class="achieve-tab-btn" id="btn-projects">💼 Projects</button>
+  </div>
+
+  <!-- Education -->
+  <div class="achieve-panel" id="tab-education">
+    <div class="achieve-cards">
+
+      <div class="qualification reveal">
+        <span class="qual-year">2023 – 2027</span>
+        <div class="qual-body">
+          <p class="qual-title">Bachelor in IT<span class="qual-gpa">CGPA 3.69</span>(Through 5th semester)</p>
+          <p class="qual-desc">B.Sc. (Hons.) in Information Technology — Institute of Information Technology, Jahangirnagar University. Currently 4th Year, 2nd Semester.</p>
         </div>
-    </nav>
-  </header>
-<!-- home section -->
-    <br /><br />
-    <div class="main">
-      <div id="home">
-        <div class="home-left">
-          <div class="home-text">
-            <h2>Hi, My name is <br><span class="highlight-1">Ananya Adhikary</span></h2>
-            <p class="home-left-intro"> I am a passionate Web Developer </p>
-            <p> I have profound knowledge in
-              front-end and I am looking forward to my Back-end Journey.
-            </p>
+      </div>
+
+      <div class="qualification reveal">
+        <span class="qual-year">2019 – 2021</span>
+        <div class="qual-body">
+          <p class="qual-title">Higher Secondary Certificate <span class="qual-gpa">GPA 5.00</span></p>
+          <p class="qual-desc">Completed HSC with a perfect GPA from Govt. Ashek Mahmud College.</p>
+        </div>
+      </div>
+
+      <div class="qualification reveal">
+        <span class="qual-year">2017 – 2019</span>
+        <div class="qual-body">
+          <p class="qual-title">Secondary School Certificate <span class="qual-gpa">GPA 4.89</span></p>
+          <p class="qual-desc">Completed SSC from Kamal Khan Hat High School.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="achieve-panel" id="tab-projects" style="display:none;">
+    <div class="achieve-cards">
+
+      <div class="qualification reveal">
+        <span class="qual-year">2026</span>
+        <div class="qual-body">
+          <p class="qual-title">Bus Ticket Booking &amp; Tracking System</p>
+          <p class="qual-desc">Full-stack web app — route search, seat booking, admin/user dashboards and real-time bus location tracking.</p>
+          <div class="tech-badges">
+            <span class="badge badge-html">HTML</span>
+            <span class="badge badge-css">CSS</span>
+            <span class="badge badge-bootstrap">Bootstrap</span>
+            <span class="badge badge-js">JavaScript</span>
+            <span class="badge badge-php">PHP</span>
+            <span class="badge badge-mysql">MySQL</span>
           </div>
-          <br />
-          <div class="button">
-            <a href="mycv.pdf" id="cv-button-home" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="qualification reveal">
+        <span class="qual-year">2024</span>
+        <div class="qual-body">
+          <p class="qual-title">Examination Form System</p>
+          <p class="qual-desc">Online exam registration — students submit forms and academic records are stored securely in a database.</p>
+          <div class="tech-badges">
+            <span class="badge badge-html">HTML</span>
+            <span class="badge badge-css">CSS</span>
+            <span class="badge badge-js">JavaScript</span>
+            <span class="badge badge-php">PHP</span>
+            <span class="badge badge-mysql">MySQL</span>
           </div>
         </div>
+      </div>
 
-        <div class="home-right">
-
-            <img
-            src="myimg.png"
-            alt="it's my pic" height="350px" 
-           >
-          </div>         
-        </div>  
-      
-      <!--   services   -->
-
-      <div id="services">
-        <h2>BEST SERVICES</h2>
-        <p >I'm <span class="highlight-1">Offering </span></p>
-        <div class="services-container">
-        <div class="services-1">
-          <h4>Responsive Web Design:</h4>
-          Creating websites that look great on all devices (desktops, tablets, and mobile phones) using HTML, CSS.
-        </div>
-        <div class="services-1">
-          <h4>Website Redesign:</h4>
-          Revamping existing websites to improve aesthetics, functionality, and user experience.  
-        
-        </div>
-        <div class="services-1">
-          <h4>Custom Website Development:</h4>
-          Building custom, static websites tailored to your needs.
+      <div class="qualification reveal">
+        <span class="qual-year">2024</span>
+        <div class="qual-body">
+          <p class="qual-title">Tourist Spot Website</p>
+          <p class="qual-desc">Static informational website showcasing tourist spots — front-end practice project.</p>
+          <div class="tech-badges">
+            <span class="badge badge-html">HTML</span>
+          </div>
         </div>
       </div>
-      </div>
-   
-    <!-- bio -->
-    
-      <div id="bio">
-        <h2>ABOUT ME</h2>
-        <p class="bio-top">Weaving imagination into the web, I create digital experiences that blend <span class="highlight-1">beauty and functionality</span></p>
-        <p>
-          I'm a passionate web developer specializing in front-end technologies
-          like HTML and CSS.My goal is to transform complex problems into
-          elegant solutions and bring your vision to life. Let's build something
-          great together!
-        </p>
-        <br />
-        <div class="details-container">
-        <table>
-          <tr>
-            <td><b>Name:</b><br />Ananya Adhikary</td>
-            <td><b>E-mail:</b><br />ananyaadhikary02@gmail.com</td>
-          </tr>
-          <tr>
-            <td><b>Birthday:</b><br />2nd jan, 2003</td>
-            <td><b>Age:</b><br />21</td>
-          </tr>
-          <tr>
-            <td><b>Phone number:</b><br />01902760603</td>
-            <td><b>Location:</b><br />Savar, Dhaka</td>
-          </tr>
-          
-        </table>
-      </div></div>
-  <br><br>
-  
-  <!--myskills-->
 
-  <div id="skills">
-    <p>SKILL</p>
-    <h2>My <span class="highlight-1">SKILLS</span</h2><br>
-      <div class="skill-container">
-      <div class="skill-box">
-      <p class="font_color"><img src="htmllogo.png" alt=""></a><br>HTML</p>
+      <div class="qualification reveal">
+        <span class="qual-year">2024</span>
+        <div class="qual-body">
+          <p class="qual-title">Expense &amp; Income Tracker</p>
+          <p class="qual-desc">Desktop app to track personal finances — log income/expenses, balance summaries and transaction history.</p>
+          <div class="tech-badges">
+            <span class="badge badge-java">Java</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-box">
-        <p class="font_color"><img src="csslogo.png" alt=""></a><br>CSS</p>
+
+      <div class="qualification reveal">
+        <span class="qual-year">2023</span>
+        <div class="qual-body">
+          <p class="qual-title">bKash App</p>
+          <p class="qual-desc">Console-based simulation of the bKash mobile banking app — university programming project.</p>
+          <div class="tech-badges">
+            <span class="badge badge-c">C</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-box">
-        <p class="font_color"><img src="javalogo.png" alt=""><br>JAVA</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PORTFOLIO ── -->
+<section id="portfolio" class="reveal">
+  <p class="sec-label">My Work</p>
+  <h2 class="sec-title"> <span style="color:black"></span>My <span class="highlight-1">Portfolio</span></h2>
+  <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+      <div class="portfolio-img-wrap">
+        <img src="bus_ticket_booking_tracking.png" alt="Bus Ticket booking & Tracking">
+        <div class="portfolio-overlay">
+          <p class="portfolio-overlay-title">Bus Ticket booking &amp; Tracking System</p>
+          <p class="portfolio-overlay-sub">Responsive website</p>
+        </div>
       </div>
-      <div class="skill-box">
-        <p class="font_color"><img src="C_Logo.png" alt=""><br>C</p>
+    </div>
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img-wrap">
+        <img src="iwt-assgnmt.png" alt="Tourist Spot Website">
+        <div class="portfolio-overlay">
+          <p class="portfolio-overlay-title">Tourist Spot</p>
+          <p class="portfolio-overlay-sub">Website · HTML</p>
+        </div>
       </div>
-      <div class="skill-box">
-        <p class="font_color"><img src="c++logo.png" alt=""><br>C++</p>
-      </div>
-      <div class="skill-box">
-        <p class="font_color"><img src="javascript.png" alt=""><br>JAVASCRIPT</p>
+    </div>
+    <div class="portfolio-card reveal">
+      <div class="portfolio-img-wrap">
+        <img src="expense_income_tracker.png" alt="Expense Income Tracker">
+        <div class="portfolio-overlay">
+          <p class="portfolio-overlay-title">Expense &amp; Income Tracker</p>
+          <p class="portfolio-overlay-sub">Application · Java</p>
+        </div>
       </div>
     </div>
   </div>
-  <!--   experience  -->
-  <div id="experience">
-     <p >QUALIFICATION</p>
-    <h2>My <span class="highlight-1">ACHIEVEMENTS</span</h2>
-    <div class="edu-experi">
-      <div class="education">
-      <p>Education</p>
-         <div class="qualification">
-          <p style="color:lightgray">2023-2027</p>
-              <span class="highlight-1">Bachelor in  IT</span><br>
-              <p>I'm studing in BSC(Hons.) in Institute of Information Technology at Jahangirnagar University.I'm now in 2nd year 1st semester.</p> 
-         </div>
-         <div class="qualification">
-          <p style="color:lightgray">2019-2021</p>
-          <span class="highlight-1">Higher Secondary</span><sub style="color:rgb(151, 141, 141)">GPA-5.00</sub><br>
-          <p>I've finished my higher secondary, achieving a GPA-5 from Govt. Ashek Mahmud College.</p> 
-     </div>
-     <div class="qualification">
-      <p style="color:lightgray">2017-2019</p>
-      <span class="highlight-1">Secondary School Certificate </span><sub style="color:rgb(151, 141, 141)">GPA-4.89</sub><br>
-      <p>I've finished my secondary school certificate exam, achieving a GPA-4.89 from Kamal Khan Hat High School.</p> 
-    </div>
-    </div>
-  <div class="previous-experience">
-    <p>Experience</p>
-         <div class="qualification">
-          <p style="color:lightgray"> 2024</p>
-              <span class="highlight-1">Tourist Spot</span><br>
-              <p>It is an website,which is made by only using HTML.</p> 
-         </div>
-         <div class="qualification"></sub><br>
-          <p style="color:lightgray"> 2024</p>
-          <span class="highlight-1">Expense and income tracker</span>
-            <p>It is an application,it was made in 2024.</p>  
-     </div>
-     <div class="qualification">
-      <p style="color:lightgray"> 2023</p>
-      <span class="highlight-1">B-kash app</span><br>
-      <p>It was a project of making b-kash app using c language,which is made in 2023.</p> </div>
-  </div></div>
+
+  <div class="portfolio-github-wrap">
+    <a href="https://github.com/ananyaAdhikary" target="_blank" class="btn-github-more">
+      <img src="githubicon.png" alt="GitHub" class="btn-github-icon">
+      See More Projects on GitHub
+    </a>
   </div>
-<br>
-<!-- Portfolio  -->
-   <div id="portfolio">
-    <p>PORTFOLIO</p>
-    <h2> My <span class="highlight-1">PORTFOLIO</span></h2>
-    <div class="img-1">
-      <img src="iwt-assgnmt.png" alt="assignment-1">
-      <div class="overlay-text">TOURIST SPOT <br>( Website, using HTML)
-      </div>
-    <div class="img-1">
-      <img src="expense_income_tracker.png" alt="expense and income tracker" >
-      <div class="overlay-text">Expense & Income Tracker<br>(Application,using java)
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="reveal">
+  <p class="sec-label">Say Hello</p>
+  <h2 class="sec-title">Get In <span class="highlight-1">Touch</span></h2>
+  <p class="contact-sub">Have a project in mind? Let's work together and create something amazing.</p>
+
+  <div class="contact-wrapper">
+
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <!-- <p class="contact-info-title">Let's connect</p> -->
+      <p class="contact-info-desc">Feel free to reach out for collaborations, freelance work, or just a friendly hello!</p>
+
+      <div class="contact-links">
+        <a href="mailto:adhikaryananya01@gmail.com" class="contact-link-item">
+              <span class="contact-link-icon"><img src="emailicon.png" alt="" style="height:25px;width:25px"></span>
+       <div>
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">adhikaryananya01@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ananya-adhikary-552355293/" target="_blank" class="contact-link-item">
+           <span class="contact-link-icon"><img src="linkedinicon.png" alt="" style="height:25px;width:25px"></span>
+          <div>
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">Ananya Adhikary</span>
+          </div>
+        </a>
+        <a href="https://github.com/ananyaAdhikary" target="_blank" class="contact-link-item">
+         <span class="contact-link-icon"><img src="githubicon.png" alt="" style="height:25px;width:25px"></span>
+          <div>
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">Ananya Adhikary</span>
+          </div>
+        </a>
       </div>
     </div>
+
+    <!-- Right: Form -->
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Subject</label>
+        <input type="text" id="address" name="address" placeholder="What's this about?">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Tell me about your project..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary" id="submit-btn">Send via WhatsApp</button>
+
+      <!-- Success message -->
+      <div class="form-success" id="form-success">
+        <span>✅</span>
+        <p>Message sent! I'll get back to you soon.</p>
+      </div>
+    </form>
+
   </div>
-  <!-- Contact -->
-    <div id="contact">
-      <p style="color:lightgrey">CONTACT-FORM</p>
-      <h2>Get In <span class="highlight-1">Touch</span></h2>
-      <form>
-     <div class="form-style"> 
-        <div class="form-left">
-        <input type="text" id="name" name="name" placeholder="Name*" required><br>
-        <input type="email" id="email" name="email" placeholder="Email*" required><br>
-        <input type="text" id="address" name="address"placeholder="Address"><br>
-      </div>
-      <div class="form-right">
-         <textarea name="message" id="message" placeholder="Message"></textarea><br> 
-         <button type="submit">Send message</button>
-      </div>
-      </div>
-       </form> 
-      </div>
+</section>
+
+</div><!-- .main -->
+
+<!-- ── FOOTER ── -->
+<footer class="bottom">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo footer-logo"><span>AN</span>ANYA</a>
+      <p>Building beautiful web experiences.</p>
     </div>
-    <!--   footer   -->
-   <footer class="bottom">
-   <div class="bottom-left">Copyright © ANANYA all rights reserved. Powered by ANANYA.<br><br>
-      <a href="https://www.linkedin.com/in/ananya-adhikary-552355293/" alt="linkedinprofile" target="_blank"><img src="linkedinlogo.png" alt="linkedinlogo"></a>
-      <a href="https://www.facebook.com/profile.php?id=100087849923381" alt="fb" target="_blank"><img src="fblogo.png" alt="fblogo"></a>
-      <a href="https://www.instagram.com/_ananya_adhikary23/?hl=en" alt="instragram" target="_blank"><img src="instra.png" alt="instralogo"></a>
-    </div> 
-    <div class="bottom-right">
-    <p>Privacy Policy</p>
-    <p>Terms and Conditions</p>       
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ananya-adhikary-552355293/" target="_blank" class="footer-social" title="LinkedIn">
+        <img src="linkedinlogo.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100087849923381" target="_blank" class="footer-social" title="Facebook">
+        <img src="fblogo.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/_ananya__adhikary/?hl=en" target="_blank" class="footer-social" title="Instagram">
+        <img src="instra.png" alt="Instagram">
+      </a>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Ananya Adhikary. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
-  </div>
-  <script src="script.js" ></script>
-    
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
